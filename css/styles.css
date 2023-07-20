@@ -1,0 +1,309 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Belanosima', sans-serif;
+    font-size: 18px;
+    line-height: 1.2;
+    background-color: #fefbfb;
+    color: #0b0a0b;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h1 {
+    font-size: 32px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+p {
+    margin: 18px 1;
+}
+
+/* Para prevenir que las imágenes "rompan" la página */
+img {
+    max-width: 100%;
+}
+
+
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    height: 90px;
+    width: 100%;
+    background-color: #eaf0eb;
+    /* Para que quede fijo en la ventana */
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* Para agregarle una sombra */
+    box-shadow: 0 3px 10px -5px #252323;
+    
+}
+
+.logo {
+    width: 100px;
+}
+
+/* Menú de navegación */
+ul#menu {
+    display: flex;
+    font-size: 20px;
+    
+}
+
+li.menu-item a {
+    color:#0c0d0c;
+    padding: 16px;
+    display: inline-block;
+}
+
+li.menu-item a.active{
+    font-weight: bold;
+}
+
+li.menu-item a:hover{
+    color: #1bed1b;
+}
+
+/* Main */
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    min-height: 50vh;
+    /* lugar para el header */
+
+}
+
+
+/* Sección Inicio */
+section#inicio {
+    justify-content: space-around;
+    padding-top: 120px; 
+}
+
+figure.presentacion-img {
+    margin-bottom: 10px;
+    
+}
+
+
+figure.presentacion-img img {
+   
+    border-radius: 50%;
+    width: 320px;
+    height: 300px;
+    padding: 3px;
+    
+}
+#inicio{
+    flex-direction: row;
+    margin top: 200px;
+}
+
+
+article.presentacion {
+    max-width: 80vh;
+    text-align: justify;
+    letter-spacing: 1.2px;
+    text-shadow: 1px 0px;
+    margin-top: 120px;
+    }
+
+a.btn {
+    background-color: #df0d84;
+    color: #fbfbfb;
+    padding: 12px 20px;
+    border-radius: 50px;
+    font-size: 40px;
+    display: inline-block;
+    box-shadow: 0px 2px 0px 1px rgba(0, 0, 0, 0.2);
+    margin-top: 20%;
+    
+
+    
+ 
+    
+}
+
+a.btn:hover {
+    background-color:#092de0;
+    color:  #060606d4;
+    color: rgb(12, 243, 50);
+}
+
+/* Sección Aprendi*/
+section#Aprendi {
+    text-align: center;
+    
+}
+
+article.Aprendi-principal {
+    background: #26ecdc;
+    text-align: center;
+    padding: 0%;
+    border-radius: 10px;
+}
+
+ul#Aprendi-items {
+    display: flex;
+}
+
+ul#Aprendi-items li {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+img.Aprendicon {
+    width: 300px;
+}
+
+/* Sección Contacto */
+section#contacto p {
+    text-align: center;
+}
+
+article.contactame {
+    background: #f4bdef;
+    text-align: center;
+    padding: 90px;
+    border-radius: 50px;
+    letter-spacing: 1.2%;
+    text-shadow: 1px 0px;
+     margin: 12%;
+     font-size: 18px;
+   
+   
+ 
+    border-radius: 5vh;
+    margin-top: 1%;
+    
+    text-shadow:  50%;
+    border-radius: 5vh;
+}
+
+ul#contact-links {
+    display: flex;
+    margin-top: -60px;
+   
+
+}
+
+ul#contact-links li {
+    margin: 18px;
+    padding: 10px;
+    border-radius: 4px;
+}
+ul#contact-links li:hover {
+    transform: scale(0.98);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);  
+   
+}
+
+img.icon {
+    width: 100px;
+
+    height: 100px;
+
+    
+}
+
+
+/* Footer */
+footer {
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ec5089;
+    color: #fbfbfb;
+}
+/* mobile */
+section {
+    display: flex;
+    flex-direction: column;
+   }
+   h1 {
+    font-size: 36px;
+   }
+   /* desktop */
+   
+@media screen and (min-width: 1024px){
+    body {
+        font-size: 18px;
+        line-height: 1.2;
+    }
+    h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+    section#inicio {
+        justify-content: space-around;
+        padding-top: 120px;
+    }
+    figure.presentacion-img img {
+        border-radius: 50%;
+        width: 250px;
+        margin-top: 50px;
+    }
+    ul#menu {
+        font-size: 18px; 
+    }
+    li.menu-item a {
+        padding: 12px;
+    }
+    img.Aprendicon {
+        width: 250px;
+        margin-top: 15% ;
+    }
+    article.Aprendi-items{
+
+        width: 50px;
+        margin-top: 50px;
+
+    }
+    article.Aprendi-principal{
+    margin-top: 5%;
+
+    }
+    img.icon {
+        width: 60px;
+        margin-top: -50px;
+    }
+    header{
+        padding: 3%;
+    }
+}
